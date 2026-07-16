@@ -15,6 +15,7 @@ models, and runtime folders are available:
 .\scripts\check_requirements.ps1
 ```
 
+
 This repository can be used in two ways:
 
 ## 1. Use As A GUI
@@ -23,6 +24,25 @@ Short summary: the GUI application is a complete Qt/QML demo for real-time face
 recognition. It lets you choose the video source, start the pipeline, display
 overlays and landmarks, manage embeddings, and add new faces from a camera or a
 folder.
+## Selecting the Build Mode
+
+Set the desired build mode in `FaceRecognition.pro`:
+
+```qmake
+FACE_RECOGNITION_MODE = gui
+```
+
+Use this mode to build the standalone Qt/QML application. The GUI statically includes the face-recognition backend and automatically builds its required `QVideoStream` dependency first.
+
+```qmake
+FACE_RECOGNITION_MODE = dll
+```
+
+Use this mode only when you want to build `FaceRecognitionLib` as a reusable DLL for integration into another Qt/C++ application.
+
+> **Note:** You do not need to build `FaceRecognitionLib.dll` before building the GUI. When GUI mode is selected, the recognition backend is compiled directly into the application.
+
+
 
 ## 2. Use As A Reusable DLL
 
