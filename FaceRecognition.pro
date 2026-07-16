@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 CONFIG += ordered
 
-FACE_RECOGNITION_MODE = gui #gui
+FACE_RECOGNITION_MODE = dll #gui
 
 contains(CONFIG, facerecognition_dll) {
     FACE_RECOGNITION_MODE = dll
