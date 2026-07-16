@@ -1,0 +1,3 @@
+[submodule "third_party/qvideostream"]
+	path = third_party/qvideostream
+	url = https://github.com/DarkShrill/QVideoStream.git

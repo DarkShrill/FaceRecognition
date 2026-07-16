@@ -1,0 +1,10 @@
+/build/*
+*.qtcreator/*
+models/1k3d68.onnx
+models/2d106det.onnx
+models/det_500m.onnx
+models/face_landmark_2d_106.onnx
+models/w600k_mbf.onnx
+models/w600k_r50.onnx
+models/buffalo_s.zip
+models/buffalo_l.zip

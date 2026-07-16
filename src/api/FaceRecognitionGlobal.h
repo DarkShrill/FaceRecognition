@@ -1,0 +1,11 @@
+#pragma once
+
+#include <QtCore/qglobal.h>
+
+#if defined(FACERECOGNITION_STATIC)
+#define FACERECOGNITION_EXPORT
+#elif defined(FACERECOGNITION_LIBRARY)
+#define FACERECOGNITION_EXPORT Q_DECL_EXPORT
+#else
+#define FACERECOGNITION_EXPORT Q_DECL_IMPORT
+#endif
