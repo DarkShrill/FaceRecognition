@@ -12,6 +12,11 @@
 
 </div>
 
+<video src="https://raw.githubusercontent.com/DarkShrill/FaceRecognition/master/docs/test.mp4"
+       controls
+       width="800">
+</video>
+▶️ [Demo Here](https://github.com/DarkShrill/FaceRecognition/blob/master/docs/test.mp4)
 ---
 
 ## Overview
